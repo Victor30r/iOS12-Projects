@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SoyPobre" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cash" translatesAutoresizingMaskIntoConstraints="NO" id="tZa-gF-NrY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Soy Pobre!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSN-VV-sgt">
+                                <rect key="frame" x="20" y="85" width="374" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="t7m-q7-V5y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poor" translatesAutoresizingMaskIntoConstraints="NO" id="JWk-A0-LaR">
+                                <rect key="frame" x="44" y="269" width="326" height="360.00000000000023"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="360" id="LY8-ag-jEN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhL-dX-M7f">
+                                <rect key="frame" x="114" y="670" width="186" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="9sj-1E-If5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="!Soy Rico¡"/>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U5Z-J1-NM2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lhL-dX-M7f" firstAttribute="top" secondItem="JWk-A0-LaR" secondAttribute="bottom" constant="41" id="0Jo-mc-GLV"/>
+                            <constraint firstItem="tZa-gF-NrY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2Cs-jO-d91"/>
+                            <constraint firstItem="tZa-gF-NrY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8q6-eZ-Mro"/>
+                            <constraint firstItem="tZa-gF-NrY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="Ene-L7-Bkd"/>
+                            <constraint firstItem="tZa-gF-NrY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="WdQ-IQ-1lo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lhL-dX-M7f" secondAttribute="trailing" constant="114" id="ZT7-Zr-ulX"/>
+                            <constraint firstItem="tZa-gF-NrY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-44" id="ZWu-ZD-88n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RSN-VV-sgt" secondAttribute="trailing" constant="20" id="ckb-zM-ZuS"/>
+                            <constraint firstItem="JWk-A0-LaR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="fc8-ft-ynO"/>
+                            <constraint firstItem="tZa-gF-NrY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ik0-Bc-T1s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JWk-A0-LaR" secondAttribute="trailing" constant="44" id="jD8-UI-VWH"/>
+                            <constraint firstItem="JWk-A0-LaR" firstAttribute="top" secondItem="RSN-VV-sgt" secondAttribute="bottom" constant="123" id="jHf-DT-Rql"/>
+                            <constraint firstItem="RSN-VV-sgt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qIB-hf-CMn"/>
+                            <constraint firstItem="RSN-VV-sgt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="qNp-Ic-Wj4"/>
+                            <constraint firstItem="lhL-dX-M7f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="qOq-6u-aPG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tZa-gF-NrY" secondAttribute="trailing" id="wFr-ps-rJn"/>
+                            <constraint firstItem="tZa-gF-NrY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-44" id="wUz-fH-PyP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnStatus" destination="lhL-dX-M7f" id="IxL-4Q-xHz"/>
+                        <outlet property="imageView" destination="JWk-A0-LaR" id="kXi-Fr-pvy"/>
+                        <outlet property="lblTitle" destination="RSN-VV-sgt" id="gWM-2r-WYb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cash" width="1007.5" height="670"/>
+        <image name="poor" width="563" height="788"/>
+    </resources>
+</document>

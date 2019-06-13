@@ -55,13 +55,29 @@
 			isa = PBXGroup;
 			children = (
 				E563FC9522B30AD900F49657 /* AppDelegate.swift */,
-				E563FC9722B30AD900F49657 /* ViewController.swift */,
-				E563FC9922B30AD900F49657 /* Main.storyboard */,
+				E563FCA722B30ADF00F49657 /* Controller */,
+				E563FCA822B30AF300F49657 /* Storyboard */,
 				E563FC9C22B30ADA00F49657 /* Assets.xcassets */,
-				E563FC9E22B30ADA00F49657 /* LaunchScreen.storyboard */,
 				E563FCA122B30ADA00F49657 /* Info.plist */,
 			);
 			path = SoyPobre;
+			sourceTree = "<group>";
+		};
+		E563FCA722B30ADF00F49657 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E563FC9722B30AD900F49657 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E563FCA822B30AF300F49657 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E563FC9922B30AD900F49657 /* Main.storyboard */,
+				E563FC9E22B30ADA00F49657 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
