@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SoyPobre" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soy Pobre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="188-MC-qbJ">
+                                <rect key="frame" x="130" y="84" width="154.5" height="38.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
+                                <color key="textColor" red="0.018478280180000001" green="0.69802461140000005" blue="0.049740015450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poorImage" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t1s-w7-Z6B">
+                                <rect key="frame" x="100" y="242.5" width="214.00000000000006" height="160.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bm9-HY-bCj">
+                                <rect key="frame" x="124" y="653" width="166" height="32"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Púlsame para ser rico">
+                                    <color key="titleColor" red="0.024063844340000001" green="0.7872004534" blue="0.07837899944" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bf9-Qg-1lz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="t1s-w7-Z6B" firstAttribute="top" secondItem="188-MC-qbJ" secondAttribute="bottom" constant="120" id="9sb-Si-CXQ"/>
+                            <constraint firstItem="t1s-w7-Z6B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F5t-db-IkO"/>
+                            <constraint firstItem="bm9-HY-bCj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UTQ-Ue-eLk"/>
+                            <constraint firstItem="188-MC-qbJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dFH-ee-qnn"/>
+                            <constraint firstItem="bm9-HY-bCj" firstAttribute="top" secondItem="t1s-w7-Z6B" secondAttribute="bottom" constant="250" id="fWn-fx-eoz"/>
+                            <constraint firstItem="188-MC-qbJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="yHs-ve-lYh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="iAmPoorLabel" destination="188-MC-qbJ" id="6jd-z7-hON"/>
+                        <outlet property="iMmPoorImage" destination="t1s-w7-Z6B" id="3v3-Lo-j6h"/>
+                        <outlet property="pressButton" destination="bm9-HY-bCj" id="H8l-e6-nk6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="poorImage" width="214" height="160.5"/>
+    </resources>
+</document>
